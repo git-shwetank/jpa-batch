@@ -1,0 +1,10 @@
+#import.input.index.values.url: app_files/cumulus/output/sample_values.csv
+import.input.index.values.url: sample_values.csv
+#import.archive.index.values.url: app_files/archives/cumulus/output/sample_values_%{timestamp}.csv
+import.archive.index.values.url: sample_values_%{timestamp}.csv
+
+spring.datasource.url: jdbc:h2:mem:testdb
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+spring.datasource.driver-class-name: org.h2.Driver
+spring.jpa.show-sql: true
+spring.jpa.properties.hibernate.format_sql: true
